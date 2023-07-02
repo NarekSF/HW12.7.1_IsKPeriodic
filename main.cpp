@@ -73,11 +73,11 @@ void IsKPeriodic(int K, const string& txt)
 
     if (K * value == txt.size()) 
     {
-        cout << txt << " êðàòåí / is multiple " << K << endl;
+        cout << txt << " кратен / is multiple " << K << endl;
     }
     else
     {
-        cout << txt << " íå êðàòåí / isn't multiple " << K << endl; 
+        cout << txt << " не кратен / isn't multiple " << K << endl; 
     }
 }
 
@@ -88,17 +88,17 @@ int main()
     string text;
 	int k;
 
-	cout << "Ââåäèòå òåêñò (íà àíãëèéñêîì) / Enter text (English only)" << endl;
+	cout << "Введите текст (на английском) / Enter text (English only)" << endl;
     cin >> text;
 
     do
     {
-        cout << "Óêàæèòå êðàòíîñòü äëÿ ïðîâåðêè / Specify the multiplicity to check" << endl;
+        cout << "Укажите кратность для проверки / Specify the multiplicity to check" << endl;
         cin >> k;
 
         if (k <= 0)
         {
-            cout << "Óêàæèòå ÷èñëî, áîëüøå 0 / Enter a number greater than 0" << endl;
+            cout << "Укажите число, больше 0 / Enter a number greater than 0" << endl;
         }
     } while (k <= 0);
 
