@@ -29,9 +29,9 @@ void computeLPS(string pat, int* lps)
     }
 }
 
-void IsKPeriodic(int K, const string& txt) // функция проверки кратности на основе алгоритма КМП
+void IsKPeriodic(int K, const string& txt) 
 {
-    string pat; // формируем подстрку, беря начальные символы строки по колличеству К
+    string pat; 
     for (int i = 0; i < K; ++i)
     {
             pat.push_back(txt[i]);
@@ -73,11 +73,11 @@ void IsKPeriodic(int K, const string& txt) // функция проверки кратности на осно
 
     if (K * value == txt.size()) 
     {
-        cout << txt << " кратен / is multiple " << K << endl;
+        cout << txt << " ГЄГ°Г ГІГҐГ­ / is multiple " << K << endl;
     }
     else
     {
-        cout << txt << " не кратен / isn't multiple " << K << endl; // иначе не кратна
+        cout << txt << " Г­ГҐ ГЄГ°Г ГІГҐГ­ / isn't multiple " << K << endl; 
     }
 }
 
@@ -88,17 +88,17 @@ int main()
     string text;
 	int k;
 
-	cout << "Введите текст (на английском) / Enter text (English only)" << endl;
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГІГҐГЄГ±ГІ (Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬) / Enter text (English only)" << endl;
     cin >> text;
 
     do
     {
-        cout << "Укажите кратность для проверки / Specify the multiplicity to check" << endl;
+        cout << "Г“ГЄГ Г¦ГЁГІГҐ ГЄГ°Г ГІГ­Г®Г±ГІГј Г¤Г«Гї ГЇГ°Г®ГўГҐГ°ГЄГЁ / Specify the multiplicity to check" << endl;
         cin >> k;
 
         if (k <= 0)
         {
-            cout << "Укажите число, больше 0 / Enter a number greater than 0" << endl;
+            cout << "Г“ГЄГ Г¦ГЁГІГҐ Г·ГЁГ±Г«Г®, ГЎГ®Г«ГјГёГҐ 0 / Enter a number greater than 0" << endl;
         }
     } while (k <= 0);
 
